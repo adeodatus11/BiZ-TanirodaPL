@@ -92,6 +92,17 @@ footer .footer-logos img{height:36px;background:#fff;border-radius:6px;padding:3
 .module-intro{background:#f0f7ff;border-left:4px solid var(--mod-color,#1565c0);border-radius:0 8px 8px 0;margin:16px 20px 12px;padding:14px 18px;font-size:.93rem;line-height:1.6;color:#2d3748}
 .module-intro .teacher-tag{display:inline-block;background:var(--mod-color,#1565c0);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.04em;border-radius:3px;padding:2px 7px;margin-bottom:8px;text-transform:uppercase}
 .module-intro p{margin:0;color:#374151}
+
+.about-section{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);margin:0 32px 28px;padding:32px 36px;max-width:1200px}
+@media(max-width:900px){.about-section{margin:0 16px 24px;padding:24px 20px}}
+.about-section h2{color:var(--primary);font-size:1.25rem;margin-bottom:6px;display:flex;align-items:center;gap:10px}
+.about-section h3{color:var(--primary);font-size:1rem;margin:22px 0 6px}
+.about-section p{color:#374151;font-size:.93rem;line-height:1.7;margin-bottom:10px}
+.about-tag{display:inline-block;background:var(--primary);color:#fff;font-size:.7rem;font-weight:700;letter-spacing:.05em;border-radius:4px;padding:3px 9px;margin-bottom:18px;text-transform:uppercase}
+.about-modules-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;margin-top:14px}
+.about-mod-item{background:#f0f7ff;border-left:3px solid var(--primary-light);border-radius:6px;padding:9px 12px;font-size:.83rem;color:#1e3a5f;line-height:1.45}
+.about-mod-item strong{display:block;font-size:.78rem;opacity:.65;margin-bottom:2px}
+.about-divider{border:none;border-top:1px solid #e2e8f0;margin:22px 0}
 </style>
 </head>
 <body>
@@ -147,16 +158,59 @@ footer .footer-logos img{height:36px;background:#fff;border-radius:6px;padding:3
   </div>
 </div>
 
+
+<div class="about-section">
+  <span class="about-tag">O programie</span>
+  <h2>📘 Czym jest Taniroda?</h2>
+  <p>
+    <strong>Taniroda</strong> (węg. <em>taniroda</em> – „biuro uczniowskie") to węgierski model dydaktyczny oparty na koncepcji <strong>firmy ćwiczebnej</strong> (<em>practice enterprise</em>), wywodzącej się z tradycji niemieckiego kształcenia zawodowego z lat 90. XX wieku. Program umożliwia uczniom symulowanie realnych procesów gospodarczych – od zakładania firmy, przez zarządzanie zasobami ludzkimi, sprzedaż, zakupy i marketing, aż po księgowość i rozliczenia podatkowe. Uczniowie pracują w fikcyjnym przedsiębiorstwie, rotując między działami i ucząc się przez doświadczenie.
+  </p>
+  <p>
+    Model Taniroda jest częścią międzynarodowej sieci <strong>EUROPEN</strong> (European Practice Enterprise Network), skupiającej ponad 7 500 firm uczniowskich w kilkudziesięciu krajach. W ramach węgierskiego centrum usług firmowych uczniowie symulują kontakty z bankiem, urzędem skarbowym, kontrahentami i odbiorcami – w tym w językach obcych podczas międzynarodowych wystaw firm uczniowskich.
+  </p>
+
+  <hr class="about-divider">
+
+  <h3>🇵🇱 Polska adaptacja – projekt WIN4SMEs</h3>
+  <p>
+    Niniejszy pakiet materiałów stanowi <strong>polską adaptację modelu Taniroda</strong> opracowaną w ramach projektu <a href="https://win4smes.eu/" target="_blank" style="color:var(--primary)">WIN4SMEs</a> – europejskiego projektu Centrów Doskonałości Kształcenia Zawodowego (CoVE), realizowanego przez 20 partnerów z 9 krajów (m.in. Polska, Węgry, Finlandia, Niemcy, Dania). Projekt jest finansowany przez Unię Europejską.
+  </p>
+  <p>
+    Adaptacja została przeprowadzona przez <strong>COVE Polska</strong> (Centrum Doskonałości Kształcenia Zawodowego) we współpracy z zespołem nauczycieli i dostosowana do polskich warunków prawnych, podstawy programowej i specyfiki rynku pracy. Materiały wpisują się w podstawę programową przedmiotu <strong>Biznes i Zarządzanie</strong> w polskich szkołach zawodowych i policealnych, rozwijając u uczniów kompetencje przedsiębiorcze, finansowe i organizacyjne niezbędne na współczesnym rynku pracy.
+  </p>
+
+  <hr class="about-divider">
+
+  <h3>📂 Zawartość pakietu – 14 modułów tematycznych</h3>
+  <p>Pakiet obejmuje 90 materiałów pogrupowanych w 14 modułów, które mogą być realizowane samodzielnie lub jako spójny kurs:</p>
+  <div class="about-modules-grid">
+    <div class="about-mod-item"><strong>Moduł 01</strong>Zakładanie działalności gospodarczej</div>
+    <div class="about-mod-item"><strong>Moduł 02</strong>Rozmowa kwalifikacyjna</div>
+    <div class="about-mod-item"><strong>Moduł 03</strong>List motywacyjny i CV</div>
+    <div class="about-mod-item"><strong>Moduł 04</strong>Formy zatrudnienia pracowników</div>
+    <div class="about-mod-item"><strong>Moduł 05</strong>Obowiązki ZUS – naliczanie składek</div>
+    <div class="about-mod-item"><strong>Moduł 06</strong>Wynagradzanie pracowników</div>
+    <div class="about-mod-item"><strong>Moduł 07</strong>Podatki PIT, CIT, VAT, akcyza</div>
+    <div class="about-mod-item"><strong>Moduł 08</strong>Rozliczenie podatku dochodowego</div>
+    <div class="about-mod-item"><strong>Moduł 09</strong>Faktura jako dokument sprzedaży</div>
+    <div class="about-mod-item"><strong>Moduł 10</strong>Urlopy pracownicze – studium przypadku</div>
+    <div class="about-mod-item"><strong>Moduł 12</strong>Słucham i mówię – komunikacja</div>
+    <div class="about-mod-item"><strong>Moduł 13</strong>Negocjacje i manipulacja</div>
+    <div class="about-mod-item"><strong>Moduł 14</strong>Zarządzanie czasem i rozwiązywanie problemów</div>
+    <div class="about-mod-item"><strong>Moduł 15</strong>PR i CSR w praktyce</div>
+  </div>
+</div>
+
 <div class="main">
   <div class="howto">
-    <h2>📖 Jak korzystać z materiałów</h2>
+    <h2>👩‍🏫 Wskazówki dla nauczyciela</h2>
     <div class="howto-grid">
-      <div class="howto-item"><h3>🎓 Nauczyciel</h3><p>Zacznij od scenariusza zajęć. Znajdziesz tam cel lekcji, przebieg i wskazówki metodyczne.</p></div>
-      <div class="howto-item"><h3>📝 Uczeń</h3><p>Otwórz materiał oznaczony „Wstęp" lub „Karta pracy" – to Twój punkt startowy dla każdego tematu.</p></div>
-      <div class="howto-item"><h3>✅ Klucze odpowiedzi</h3><p>Pliki oznaczone „Klucz odpowiedzi" przeznaczone są wyłącznie dla nauczyciela – zawierają poprawne rozwiązania.</p></div>
-      <div class="howto-item"><h3>📊 Prezentacje</h3><p>Pliki PPT/PPTX to gotowe prezentacje multimedialne do wyświetlenia podczas zajęć.</p></div>
-      <div class="howto-item"><h3>🔍 Wyszukiwarka</h3><p>Użyj pola wyszukiwania, aby szybko znaleźć konkretny materiał po słowie kluczowym.</p></div>
-      <div class="howto-item"><h3>📥 Otwieranie plików</h3><p>Kliknij przycisk ↗ przy każdym pliku, aby otworzyć go bezpośrednio lub pobrać na urządzenie.</p></div>
+      <div class="howto-item"><h3>📋 Scenariusz / Konspekt</h3><p>Każdy moduł zawiera gotowy plan zajęć z celami, przebiegiem i wskazówkami metodycznymi – zacznij właśnie od niego.</p></div>
+      <div class="howto-item"><h3>💡 Wstęp i karty pracy</h3><p>„Wstęp" wprowadza uczniów w temat, natomiast „Karty pracy" to ćwiczenia do samodzielnego lub grupowego wykonania podczas lekcji.</p></div>
+      <div class="howto-item"><h3>✅ Klucze odpowiedzi</h3><p>Pliki oznaczone „Klucz odpowiedzi" zawierają wzorcowe rozwiązania – przeznaczone wyłącznie dla prowadzącego.</p></div>
+      <div class="howto-item"><h3>📊 Prezentacje</h3><p>Pliki PPT/PPTX to gotowe slajdy do wyświetlenia podczas zajęć. Prezentacje dodatkowe rozszerzają materiał podstawowy.</p></div>
+      <div class="howto-item"><h3>🔍 Wyszukiwarka i filtry</h3><p>Użyj pola wyszukiwania lub przycisków filtrów (DOCX / PDF / PPT / XLS), aby szybko odnaleźć potrzebny materiał.</p></div>
+      <div class="howto-item"><h3>📥 Pobieranie plików</h3><p>Kliknij przycisk ↗ przy każdym pliku, aby otworzyć go w przeglądarce lub pobrać na urządzenie.</p></div>
     </div>
   </div>
 
