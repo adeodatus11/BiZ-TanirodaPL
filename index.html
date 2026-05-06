@@ -68,14 +68,14 @@ a{color:inherit;text-decoration:none}
 .mod-card-arrow{margin-left:auto;font-size:.9rem;color:var(--mod-color,var(--primary));font-weight:700}
 
 /* ── Footer ── */
-footer{background:var(--primary);color:rgba(255,255,255,.8);text-align:center;padding:28px 32px;font-size:.82rem;line-height:1.8}
+footer{background:var(--primary);color:rgba(255,255,255,.8);padding:28px 32px;font-size:.82rem;line-height:1.8}
 footer strong{color:#fff}
-.footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:nowrap}
 .footer-logos{display:flex;align-items:center;gap:20px;background:linear-gradient(135deg,#fff 0%,#e8f0fa 100%);border-radius:18px;padding:16px 24px;box-shadow:0 4px 18px rgba(0,0,0,0.22);flex-shrink:0}
 .footer-logos .logo-win{height:100px;object-fit:contain}
 .footer-logos-secondary{display:flex;flex-direction:column;gap:14px;justify-content:center}
 .footer-logos-secondary img{height:42px;object-fit:contain}
-.footer-text{text-align:right;line-height:2}
+.footer-text{text-align:right;line-height:2;flex:1;min-width:0}
 
 @media(max-width:900px){.howto-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:680px){.hero{padding:24px 16px}.hero-inner{flex-direction:column;gap:20px}.hero-logos{justify-content:flex-start}.hero-text h1{font-size:1.4rem}.main{padding-left:16px;padding-right:16px}.mod-grid{grid-template-columns:1fr}.howto-grid{grid-template-columns:repeat(2,1fr)}}
