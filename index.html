@@ -77,6 +77,23 @@ footer strong{color:#fff}
 .footer-logos-secondary img{height:42px;object-fit:contain}
 .footer-text{text-align:right;line-height:1.7;flex:1;min-width:0}
 
+/* ── Autorzy ── */
+.authors-section{margin-bottom:40px}
+.authors-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:18px}
+.author-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px 24px;display:flex;gap:18px;align-items:flex-start;border-top:4px solid var(--primary)}
+.author-placeholder{border-top-color:var(--border);opacity:.55}
+.author-avatar{flex-shrink:0;width:52px;height:52px;border-radius:50%;background:var(--primary);color:#fff;font-size:1.1rem;font-weight:700;display:flex;align-items:center;justify-content:center;letter-spacing:.5px}
+.author-avatar-empty{background:var(--border);color:var(--muted)}
+.author-body{flex:1;min-width:0}
+.author-name{font-size:.97rem;font-weight:700;color:var(--text);margin-bottom:3px}
+.author-title{font-size:.75rem;color:var(--primary);font-weight:600;margin-bottom:8px;line-height:1.4}
+.author-desc{font-size:.8rem;color:#4b5563;line-height:1.6;margin-bottom:10px}
+.author-links{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.author-link-btn{font-size:.72rem;font-weight:600;padding:3px 10px;border-radius:20px;background:#e8f0fe;color:var(--primary);transition:.15s}
+.author-link-btn:hover{background:var(--primary);color:#fff}
+.author-link{color:var(--primary-light);text-decoration:underline;font-size:.8rem}
+.author-contact{font-size:.78rem;color:var(--muted)}
+
 @media(max-width:900px){.howto-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:680px){.hero{padding:24px 16px}.hero-inner{flex-direction:column;gap:20px}.hero-logos{justify-content:flex-start}.hero-text h1{font-size:1.4rem}.main{padding-left:16px;padding-right:16px}.mod-grid{grid-template-columns:1fr}.howto-grid{grid-template-columns:repeat(2,1fr)}}
 </style>
@@ -277,6 +294,70 @@ footer strong{color:#fff}
     </a>
 
   </div>
+
+  <!-- ── Autorzy ── -->
+  <div class="authors-section">
+    <div class="section-title" style="margin-bottom:20px">👩‍🏫 Autorzy kursu</div>
+    <div class="authors-grid">
+
+      <!-- Autor 1 -->
+      <div class="author-card">
+        <div class="author-avatar">AS</div>
+        <div class="author-body">
+          <div class="author-name">Agnieszka Skarupa</div>
+          <div class="author-title">Nauczyciel dyplomowany · Egzaminator OKE</div>
+          <div class="author-desc">Egzaminator w zawodach: technik logistyk, technik handlowiec, magazynier, sprzedawca. Ukończyła studia magisterskie na Uniwersytecie Ekonomicznym we Wrocławiu (Zarządzanie i marketing) oraz studia podyplomowe z zakresu logistyki, spedycji i zarządzania oświatą. Przed pracą w szkole przez ponad 10 lat prowadziła działalność gospodarczą. Z oświatą związana od 2010 r. Współpracowała z Centrum Kształcenia Zawodowego przy projektach doposażenia pracowni i organizacji staży. Uczy w ZSZ nr 5 we Wrocławiu – kierunki: technik handlowiec i sprzedawca.</div>
+        </div>
+      </div>
+
+      <!-- Autor 2 -->
+      <div class="author-card">
+        <div class="author-avatar">DS</div>
+        <div class="author-body">
+          <div class="author-name">Dr Dariusz Socha, prof. uczelni</div>
+          <div class="author-title">Nauczyciel ZSZ nr 5 Wrocław · Profesor ATA Wrocław · CEO Adviser Expert</div>
+          <div class="author-desc">Terapeuta Pomocy Emocjonalnej (Nr leg. ATPE 1/02/2019) · ORCID: <a href="https://orcid.org/0000-0002-8651-4832" target="_blank" class="author-link">0000-0002-8651-4832</a></div>
+          <div class="author-links">
+            <a href="https://zsz5.edupage.org/" target="_blank" class="author-link-btn">ZSZ nr 5</a>
+            <a href="https://wab.edu.pl/zespol/dr-dariusz-socha-prof-ata/" target="_blank" class="author-link-btn">ATA Wrocław</a>
+            <a href="http://adviser-expert.pl" target="_blank" class="author-link-btn">Adviser Expert</a>
+            <a href="https://www.linkedin.com/in/dariusz-socha-319ba02b2" target="_blank" class="author-link-btn">LinkedIn</a>
+            <a href="https://www.researchgate.net/profile/Dariusz-Socha-4" target="_blank" class="author-link-btn">ResearchGate</a>
+          </div>
+          <div class="author-contact">✉ <a href="mailto:dsocha1@zsz5.edupage.org" class="author-link">dsocha1@zsz5.edupage.org</a></div>
+        </div>
+      </div>
+
+      <!-- Autor 3 – placeholder -->
+      <div class="author-card author-placeholder">
+        <div class="author-avatar author-avatar-empty">?</div>
+        <div class="author-body">
+          <div class="author-name" style="color:var(--muted)">Autor 3</div>
+          <div class="author-title" style="color:var(--border)">– wkrótce –</div>
+        </div>
+      </div>
+
+      <!-- Autor 4 – placeholder -->
+      <div class="author-card author-placeholder">
+        <div class="author-avatar author-avatar-empty">?</div>
+        <div class="author-body">
+          <div class="author-name" style="color:var(--muted)">Autor 4</div>
+          <div class="author-title" style="color:var(--border)">– wkrótce –</div>
+        </div>
+      </div>
+
+      <!-- Autor 5 – placeholder -->
+      <div class="author-card author-placeholder">
+        <div class="author-avatar author-avatar-empty">?</div>
+        <div class="author-body">
+          <div class="author-name" style="color:var(--muted)">Autor 5</div>
+          <div class="author-title" style="color:var(--border)">– wkrótce –</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </div>
 
 <footer>
