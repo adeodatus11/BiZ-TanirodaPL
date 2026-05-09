@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Autorzy kursu · Kompas BiZ</title>
+<style>
+:root{--primary:#1b3a6b;--primary-light:#2755a3;--accent:#f7c948;--bg:#f0f4f8;--card:#fff;--text:#1e293b;--muted:#64748b;--border:#e2e8f0;--radius:12px;--shadow:0 2px 12px rgba(0,0,0,.08)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.6}
+a{color:inherit;text-decoration:none}
+
+.topbar{background:var(--primary);color:#fff;padding:6px 32px;display:flex;align-items:center;justify-content:space-between;font-size:12px;opacity:.95}
+.topbar-right{display:flex;align-items:center;gap:7px;color:#fff;opacity:.95;font-weight:700;font-size:13px;letter-spacing:.4px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.22);border-radius:20px;padding:4px 12px 4px 6px}
+.topbar-right img{height:26px;object-fit:contain}
+
+.hero{background:linear-gradient(135deg,var(--primary) 0%,#0d2b55 60%,#133a1e 100%);color:#fff;padding:28px 32px 24px}
+.hero-inner{max-width:1200px;margin:auto;display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+
+.main{max-width:1200px;margin:32px auto 64px;padding:0 32px}
+
+/* ── Karty autorów ── */
+.authors-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:22px}
+.author-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:28px 26px;display:flex;gap:20px;align-items:flex-start;border-top:4px solid var(--primary);transition:.15s}
+.author-card:hover{box-shadow:0 6px 24px rgba(0,0,0,.13);transform:translateY(-2px)}
+.author-placeholder{border-top-color:var(--border);opacity:.5;pointer-events:none}
+.author-avatar{flex-shrink:0;width:58px;height:58px;border-radius:50%;background:var(--primary);color:#fff;font-size:1.2rem;font-weight:700;display:flex;align-items:center;justify-content:center;letter-spacing:.5px;box-shadow:0 2px 8px rgba(27,58,107,.3)}
+.author-avatar-empty{background:var(--border);color:var(--muted);box-shadow:none}
+.author-body{flex:1;min-width:0}
+.author-name{font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:3px}
+.author-title{font-size:.78rem;color:var(--primary);font-weight:600;margin-bottom:10px;line-height:1.5}
+.author-desc{font-size:.83rem;color:#4b5563;line-height:1.65;margin-bottom:12px}
+.author-links{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:10px}
+.author-link-btn{font-size:.73rem;font-weight:600;padding:4px 11px;border-radius:20px;background:#e8f0fe;color:var(--primary);transition:.15s;display:inline-flex;align-items:center;gap:4px}
+.author-link-btn:hover{background:var(--primary);color:#fff}
+.author-link{color:var(--primary-light);text-decoration:underline;font-size:.82rem}
+.author-contact{font-size:.8rem;color:var(--muted);margin-top:4px}
+
+/* ── Footer ── */
+footer{background:var(--primary);color:rgba(255,255,255,.8);padding:16px 32px;font-size:.82rem}
+footer strong{color:#fff}
+.footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:nowrap}
+.footer-logos{display:flex;align-items:center;gap:20px;background:linear-gradient(135deg,#fff 0%,#e8f0fa 100%);border-radius:18px;padding:14px 22px;box-shadow:0 4px 18px rgba(0,0,0,0.22);flex-shrink:0}
+.footer-logos .logo-win{height:100px;object-fit:contain}
+.footer-logos-secondary{display:flex;flex-direction:column;gap:14px;justify-content:center}
+.footer-logos-secondary img{height:42px;object-fit:contain}
+.footer-text{text-align:right;line-height:1.7;flex:1;min-width:0}
+
+@media(max-width:680px){.hero{padding:20px 16px}.main{padding-left:16px;padding-right:16px}.authors-grid{grid-template-columns:1fr}.hero-inner{flex-direction:column}.footer-inner{flex-wrap:wrap}.footer-text{text-align:left}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span>📚 Kompas BiZ – Biznes i Zarządzanie &nbsp;|&nbsp; WP4.2.A2.2 Adaptacja modułu</span>
+  <a href="https://win4smes.eu/" target="_blank" class="topbar-right">
+    <img src="grafiki/Logo-2025.png" alt="WIN4SMEs">
+    <span>WIN4SMEs</span>
+  </a>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div style="flex:1;min-width:0">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+        <a href="index.html" style="display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:4px 12px;font-size:.8rem;color:#fff;opacity:.9">← Powrót</a>
+      </div>
+      <h1 style="font-size:1.8rem;font-weight:700;letter-spacing:-.3px">👩‍🏫 <span style="color:var(--accent)">Autorzy kursu</span></h1>
+      <p style="opacity:.85;margin-top:8px;font-size:.95rem;max-width:560px">Zespół nauczycieli i ekspertów, którzy opracowali materiały dydaktyczne pakietu <strong>Kompas BiZ</strong> w ramach projektu WIN4SMEs.</p>
+    </div>
+    <div style="flex-shrink:0;display:flex;align-items:center;gap:20px;border-radius:18px;padding:16px 24px;background:linear-gradient(135deg,#fff 0%,#e8f0fa 100%);box-shadow:0 4px 20px rgba(0,0,0,0.22)">
+      <a href="https://win4smes.eu/" target="_blank" title="WIN4SMEs"><img src="grafiki/Logo-2025.png" alt="WIN4SMEs" style="height:120px;object-fit:contain"></a>
+      <div style="display:flex;flex-direction:column;gap:14px;justify-content:center">
+        <a href="https://covepolska.pl/" target="_blank" title="COVE Polska"><img src="grafiki/COVE Polska bez tła.png" alt="COVE Polska" style="height:48px;object-fit:contain"></a>
+        <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home" target="_blank" title="Dofinansowane przez UE"><img src="grafiki/PL_Co-fundedbytheEU_RGB_POS.png" alt="UE" style="height:44px;object-fit:contain"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+  <div class="authors-grid">
+
+    <!-- Autor 1 – Agnieszka Skarupa -->
+    <div class="author-card">
+      <div class="author-avatar">AS</div>
+      <div class="author-body">
+        <div class="author-name">Agnieszka Skarupa</div>
+        <div class="author-title">Nauczyciel dyplomowany · Egzaminator OKE</div>
+        <div class="author-desc">Egzaminator w zawodach: technik logistyk, technik handlowiec, magazynier i sprzedawca. Ukończyła studia magisterskie na Uniwersytecie Ekonomicznym we Wrocławiu (specjalność: Zarządzanie i marketing w przedsiębiorstwie) oraz studia podyplomowe na kierunkach: Technik logistyk i technik spedytor oraz Zarządzanie placówką oświatową.<br><br>Przed pracą w szkole przez ponad 10 lat prowadziła działalność gospodarczą. Z oświatą związana od 2010 r. Współpracowała z Centrum Kształcenia Zawodowego, koordynując projekty doposażenia pracowni szkolnych i organizacji staży oraz kursów zawodowych dla uczniów. Obecnie uczy w Zespole Szkół Zawodowych nr 5 we Wrocławiu na kierunkach: technik handlowiec i sprzedawca.</div>
+      </div>
+    </div>
+
+    <!-- Autor 2 – Dr Dariusz Socha -->
+    <div class="author-card">
+      <div class="author-avatar">DS</div>
+      <div class="author-body">
+        <div class="author-name">Dr Dariusz Socha, prof. uczelni</div>
+        <div class="author-title">Nauczyciel ZSZ nr 5 we Wrocławiu · Profesor Uczelni ATA we Wrocławiu · Dyrektor Generalny CEO Adviser Expert</div>
+        <div class="author-desc">Terapeuta Pomocy Emocjonalnej (Nr leg. ATPE 1/02/2019)<br>ORCID: <a href="https://orcid.org/0000-0002-8651-4832" target="_blank" class="author-link">0000-0002-8651-4832</a></div>
+        <div class="author-links">
+          <a href="https://zsz5.edupage.org/" target="_blank" class="author-link-btn">🏫 ZSZ nr 5</a>
+          <a href="https://wab.edu.pl/zespol/dr-dariusz-socha-prof-ata/" target="_blank" class="author-link-btn">🎓 ATA Wrocław</a>
+          <a href="http://adviser-expert.pl" target="_blank" class="author-link-btn">💼 Adviser Expert</a>
+          <a href="https://www.linkedin.com/in/dariusz-socha-319ba02b2" target="_blank" class="author-link-btn">🔗 LinkedIn</a>
+          <a href="https://www.researchgate.net/profile/Dariusz-Socha-4" target="_blank" class="author-link-btn">🔬 ResearchGate</a>
+        </div>
+        <div class="author-contact">✉ <a href="mailto:dsocha1@zsz5.edupage.org" class="author-link">dsocha1@zsz5.edupage.org</a></div>
+      </div>
+    </div>
+
+    <!-- Autor 3 – placeholder -->
+    <div class="author-card author-placeholder">
+      <div class="author-avatar author-avatar-empty">?</div>
+      <div class="author-body">
+        <div class="author-name" style="color:var(--muted)">Autor 3</div>
+        <div class="author-title" style="color:var(--border)">– wkrótce –</div>
+      </div>
+    </div>
+
+    <!-- Autor 4 – placeholder -->
+    <div class="author-card author-placeholder">
+      <div class="author-avatar author-avatar-empty">?</div>
+      <div class="author-body">
+        <div class="author-name" style="color:var(--muted)">Autor 4</div>
+        <div class="author-title" style="color:var(--border)">– wkrótce –</div>
+      </div>
+    </div>
+
+    <!-- Autor 5 – placeholder -->
+    <div class="author-card author-placeholder">
+      <div class="author-avatar author-avatar-empty">?</div>
+      <div class="author-body">
+        <div class="author-name" style="color:var(--muted)">Autor 5</div>
+        <div class="author-title" style="color:var(--border)">– wkrótce –</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logos">
+      <a href="https://win4smes.eu/" target="_blank" title="WIN4SMEs"><img src="grafiki/Logo-2025.png" alt="WIN4SMEs" class="logo-win"></a>
+      <div class="footer-logos-secondary">
+        <a href="https://covepolska.pl/" target="_blank" title="COVE Polska"><img src="grafiki/COVE Polska bez tła.png" alt="COVE Polska"></a>
+        <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home" target="_blank" title="Dofinansowane przez UE"><img src="grafiki/PL_Co-fundedbytheEU_RGB_POS.png" alt="UE"></a>
+      </div>
+    </div>
+    <div class="footer-text">
+      <strong>Kompas BiZ – Biznes i Zarządzanie</strong><br>
+      WP4.2.A2.2 Adaptacja modułu · Projekt <strong>WIN4SMEs</strong><br>
+      Regional and International Education Partnerships for Workplace Innovation in SMEs<br>
+      Dofinansowane przez Unię Europejską · <a href="https://covepolska.pl/" style="color:rgba(255,255,255,.75)">COVE Polska</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
